@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>UOC Boilerplate</title>
+  </head>
+  <body>
+    <main>
+      <h2>Contactanos!!</h2>
+      <p class="lead">
+        Si quieres contactarnos, llena el siguiente formulario.
+      </p>
+
+      <div class="container">
+        <form action="/procesamiento-datos" method="post" >
+          <div class="form-group">
+            <div>
+              <label for="name">Nombre</label>
+              <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Ingresa tu nombre">
+              <small id="nameHelp" class="form-text text-muted">Nunca compartiremos tus datos con nadie</small>
+            </div>
+            <div>
+              <label for="lastname">Apellido</label>
+              <input type="text" class="form-control" id="lastname" aria-describedby="lastnameHelp" placeholder="Ingresa tu apellido">
+              <small id="lastnameHelp" class="form-text text-muted">Nunca compartiremos tus datos con nadie</small>
+            </div>
+            <div>
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+              <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tus datos con nadie</small>
+            </div>
+            <div>
+              <label for="city">Ciudad</label>
+              <select name="city" id="city" multiple class="form-control">
+                <option value="">Selecciona una ciudad</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Valencia">Valencia</option>
+                <option value="Sevilla">Sevilla</option>
+                <option value="La coruña" selected>La coruña</option>
+                <option value="Malaga">Malaga</option>
+            </select> 
+            </div>
+
+            <fieldset>
+              <div>
+                <input type="radio" name="genre-m" value="male">
+                <label for="genre-m">Masculino</label>
+              </div>
+              <div>
+                <input type="radio" name="genre-f" value="female">
+                <label for="genre-f">Femenino</label>
+              </div>
+              
+            </fieldset>
+
+            <fieldset>
+              <input type="checkbox" name="privacy">
+              <label for="privacy">Acepto las condiciones de uso y politica de privacidad</label>
+            </fieldset>
+
+            <fieldset>
+              <labe for="comentarios">Comentarios</labe>
+              <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary mt-5">Submit</button>
+            <button type="reset" class="btn btn-secondary mt-5">Reset</button>
+          </div>
+        </form>
+
+
+
+      </div>
+
+
+
+
+
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
