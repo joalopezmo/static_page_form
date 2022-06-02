@@ -17,42 +17,48 @@
       <div class="container">
         <form action="/procesamiento-datos" method="post" >
           <div class="form-group">
-            <div>
-              <label for="name">Nombre</label>
-              <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Ingresa tu nombre">
-              <small id="nameHelp" class="form-text text-muted">Nunca compartiremos tus datos con nadie</small>
-            </div>
-            <div>
-              <label for="lastname">Apellido</label>
-              <input type="text" class="form-control" id="lastname" aria-describedby="lastnameHelp" placeholder="Ingresa tu apellido">
-              <small id="lastnameHelp" class="form-text text-muted">Nunca compartiremos tus datos con nadie</small>
-            </div>
-            <div>
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-              <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tus datos con nadie</small>
-            </div>
-            <div>
-              <label for="city">Ciudad</label>
-              <select name="city" id="city" multiple class="form-control">
-                <option value="">Selecciona una ciudad</option>
-                <option value="Barcelona">Barcelona</option>
-                <option value="Madrid">Madrid</option>
-                <option value="Valencia">Valencia</option>
-                <option value="Sevilla">Sevilla</option>
-                <option value="La coruña" selected>La coruña</option>
-                <option value="Malaga">Malaga</option>
-            </select> 
-            </div>
+            <fieldset>
+                <div class="field">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Ingresa tu nombre">
+                <small id="nameHelp" class="form-text text-muted">Nunca compartiremos tus datos con nadie</small>
+              </div>
+              <div class="field">
+                <label for="lastname">Apellido</label>
+                <input type="text" class="form-control" id="lastname" aria-describedby="lastnameHelp" placeholder="Ingresa tu apellido">
+                <small id="lastnameHelp" class="form-text text-muted">Nunca compartiremos tus datos con nadie</small>
+              </div>
+              <div class="field">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tus datos con nadie</small>
+              </div>
+              <div class="field">
+                <label for="city">Ciudad</label>
+                <select name="city" id="city" multiple class="form-control">
+                  <option value="">Selecciona una ciudad</option>
+                  <option value="Barcelona">Barcelona</option>
+                  <option value="Madrid">Madrid</option>
+                  <option value="Valencia">Valencia</option>
+                  <option value="Sevilla">Sevilla</option>
+                  <option value="La coruña" selected>La coruña</option>
+                  <option value="Malaga">Malaga</option>
+              </select> 
+              </div>
+            </fieldset>
+           
 
             <fieldset>
+              <p></p>
               <div>
-                <input type="radio" name="genre-m" value="male">
-                <label for="genre-m">Masculino</label>
+                <input type="radio" name="genre" value="male">
+                <label for="genre">Masculino</label>
+                <input type="radio" name="genre" value="female">
+                <label for="genre">Femenino</label>
               </div>
               <div>
-                <input type="radio" name="genre-f" value="female">
-                <label for="genre-f">Femenino</label>
+                
+                
               </div>
               
             </fieldset>
@@ -75,10 +81,6 @@
 
 
       </div>
-
-
-
-
 
     </main>
     <include src="./views/footer.html"></include>
